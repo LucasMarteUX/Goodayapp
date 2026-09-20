@@ -1,0 +1,14 @@
+---
+description: Invoca o Security Agent (auditoria e hardening de aplicação). Use em pedidos de segurança, RLS, IDOR, secrets, rate limit.
+alwaysApply: false
+---
+
+# Security Agent
+
+Quando o usuário pedir o **Security Agent**, auditoria de segurança, harden, revisão de RLS/IDOR/secrets, ou proteção de auth/API:
+
+1. Ler e seguir a skill do projeto: `.cursor/skills/security-agent/SKILL.md`
+2. Aplicar o playbook: `.cursor/skills/security-agent/playbook.md`
+3. Entregar o relatório no formato: `.cursor/skills/security-agent/report-template.md`
+
+Não presumir que o código atual é seguro só porque funciona. Auditoria completa a cada execução do agente.

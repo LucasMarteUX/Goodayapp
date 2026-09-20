@@ -47,3 +47,12 @@ Key rules (non-negotiable):
 - Bottom nav: floating pill, max 420px centered, `z-45`.
 - Stories: drag-to-scroll desktop, snap, no visible scrollbar, **no arrow buttons**.
 - Groups grid: `auto-fill minmax(190px,1fr)` — always fills available width.
+
+## Security Agent
+
+For full application security audits (auth, RLS, IDOR, secrets, rate limits), load and follow:
+
+- `.cursor/skills/security-agent/SKILL.md`
+- `.cursor/skills/security-agent/playbook.md`
+
+Invoke with: “rode o Security Agent” / “auditoria de segurança”.
