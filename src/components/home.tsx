@@ -550,23 +550,25 @@ export function ContextRail({ groups, onOpenGroup }: { groups: Group[]; onOpenGr
 export function TopBar({ user, onNavigate, onNotifications }: { user: { avatar: string }; onNavigate?: (key: string) => void; onNotifications?: () => void }) {
   return (
     <header className="sticky top-0 z-40 hidden w-full items-center gap-6 bg-canvas px-5 py-4 border-b border-neutral-200 min-[800px]:flex min-[1800px]:px-8">
-      <Logo className="text-[26px]" />
-      <div className="relative max-w-[560px] flex-1">
-        <input
-          placeholder="O que deseja fazer de bom hoje?"
-          onFocus={() => onNavigate?.('search')}
-          className="h-12 w-full cursor-pointer rounded-full bg-surface pl-5 pr-12 text-[15px] text-ink outline-none placeholder:text-neutral-400 focus:ring-4 focus:ring-accent-200/40"
-        />
-        <SearchIcon
-          width={20}
-          height={20}
-          className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400"
-        />
+      <div className="flex min-w-0 flex-1 items-center gap-6">
+        <Logo className="shrink-0 text-[26px]" />
+        <div className="relative min-w-0 w-full max-w-[720px] flex-1">
+          <input
+            placeholder="O que deseja fazer de bom hoje?"
+            onFocus={() => onNavigate?.('search')}
+            className="h-12 w-full cursor-pointer rounded-full bg-surface pl-5 pr-12 text-[15px] text-ink outline-none placeholder:text-neutral-400 focus:ring-4 focus:ring-accent-200/40"
+          />
+          <SearchIcon
+            width={20}
+            height={20}
+            className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400"
+          />
+        </div>
       </div>
-      <p className="ml-auto hidden text-[14px] font-medium text-neutral-500 lg:block">
-        Respeite sua mente e trate seu corpo bem!
-      </p>
-      <div className="flex items-center gap-2">
+      <div className="flex shrink-0 items-center gap-3">
+        <p className="hidden text-[14px] font-medium text-neutral-500 xl:block">
+          Respeite sua mente e trate seu corpo bem!
+        </p>
         <IconButton aria-label="Notificações" onClick={onNotifications}>
           <BellIcon width={22} height={22} />
         </IconButton>
