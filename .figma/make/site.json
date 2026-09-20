@@ -1,0 +1,11 @@
+{
+  "title": "Gooday-app-workshop4",
+  "description": "Connect with friends and communities through a social networking platform featuring user-friendly login, registration, and interactive group cards.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

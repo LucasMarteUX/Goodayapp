@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "Notion__6be2f2bc": {
+      "type": "http",
+      "url": "${MCP_PROXY_BASE_URL}/proxy/6be2f2bc-0ccf-4160-b968-50a094947284",
+      "headers": {
+        "Authorization": "Bearer ${MCP_PROXY_AUTH_TOKEN}"
+      }
+    }
+  }
+}
